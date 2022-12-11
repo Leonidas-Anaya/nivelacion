@@ -1,0 +1,44 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family:cursive;
+    color:#fff;
+    font-size:23px;
+}
+
+.ofc {
+    top:100px;
+    left:40px;
+    position:relative;
+    height:400px;
+    width:300px;
+    border-radius:20px;
+    text-align:center;
+    background: #000a27;
+}
+.contenedor {
+    border:1px solid green;
+    position:absolute;
+    top:50%;
+    left:7%;
+    bacbackground: #000a27;
+    
+    
+}
+input {
+    height:30px;
+    width:250px;
+    font-size:23px;
+    color:black;
+}
+#hola{
+    border:3px solid green;
+    margin:3px;
+}
+.title{
+    font-weight:900;
+} img {
+    width:100px;
+    margin-top:50px;
+}
