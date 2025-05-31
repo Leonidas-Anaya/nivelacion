@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Gestión 1% en Trading</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      padding: 30px;
+    }
+    .container {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      color: #34495e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Gestión 1% para Trading</h2>
+    <p>Ingresa tu capital actual en USD:</p>
+    <input type="number" id="capital" placeholder="Ej. 3000" min="0" step="any">
+    <button onclick="calcularOperacion()">Calcular</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    function calcularOperacion() {
+      const capital = parseFloat(document.getElementById("capital").value);
+
+      if (isNaN(capital) || capital <= 0) {
+        document.getElementById("resultado").innerText = "⚠️ Ingresa un capital válido.";
+        return;
+      }
+
+      const operacion = Math.floor(capital * 0.01);
+
+      document.getElementById("resultado").innerHTML =
+        `Con un capital de $${capital.toFixed(2)} USD, debes operar <strong>$${operacion}</strong> por operación (1% redondeado hacia abajo).`;
+    }
+  </script>
+
+</body>
+</html>
