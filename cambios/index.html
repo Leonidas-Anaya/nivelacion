@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RECOLLECCION POTOS DE GRANDE</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background: linear-gradient(-45deg, #ff5252, #ffeb3b, #4caf50, #2196f3);
+      background-size: 400% 400%;
+      animation: coloresNavidad 10s ease infinite;
+      color: #fff;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    @keyframes coloresNavidad {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      margin: 1rem auto;
+      max-width: 500px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      border-bottom: 3px solid #fff;
+    }
+
+    .card button {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card button:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .descripcion {
+      display: none;
+      padding: 1rem;
+      font-size: 0.95rem;
+      background: rgba(255,255,255,0.15);
+    }
+  </style>
+</head>
+<body>
+  <h2 id="enpantalla"></h2>
+
+<centerter><h1>RECOLECCION DE POTOS DE GRANDE</h1></centerter>
+  
+
+<div class="card">
+  <img src="https://i.ibb.co/vvdS3Tpt/20250530-092150.jpg" alt="CULO GRANDE">
+  <button onclick="toggle(this)">GRANDE trabajando duro</button>
+  <div class="descripcion">El trabajo duro es el camino para musculos de xd</div>
+</div>
+
+<div class="card">
+  <img src="https://i.ibb.co/v4sK47L2/20250530-092114.jpg" alt="FOTO 2 SIN SENCURA">
+  <button onclick="toggle(this)">POSE DE  hippopotamus</button>
+  <div class="descripcion">Ahi </div>
+</div>
+
+<div class="card">
+  <img src="https://i.ibb.co/vvdS3Tpt/20250530-092150.jpg" alt="FOTO DE maestros">
+  <button onclick="toggle(this)">Pose de culo de tiboronsin</button>
+  <div class="descripcion">Adivo que estas en la cama echado viendo tu cel jajja</div>
+</div>
+
+<div class="card">
+  <img src="https://i.ibb.co/vvdS3Tpt/20250530-092150.jpg" alt="CHICA KALATO COMO LOBO">
+  <button onclick="toggle(this)">PROOHIBIDO VER</button>
+  <div class="descripcion">QUE MIRAS SAPO</div>
+</div>
+
+<div class="card">
+  <img src="https://i.ibb.co/vvdS3Tpt/20250530-092150.jpg" alt="Que aburrido">
+  <button onclick="toggle(this)">XD</button>
+  <div class="descripcion">Estar escribiendo esto</div>
+</div>
+
+<div class="card">
+  <img src="https://i.ibb.co/vvdS3Tpt/20250530-092150.jpg" alt="amigos
+                                                              ">
+  <button onclick="toggle(this)">RAAAA</button>
+  <div class="descripcion">Que flojera mejor yo me tiro unos pajasos</div>
+</div>
+
+<div class="card">
+  <img src="https://i.ibb.co/BV6WrFSf/20250530-092110.jpg" alt="no">
+  <button onclick="xd()">EL QUE LO LEA ES GAY</button>
+  <div id="descripcion">Esto es la historia oculta de los grandes rambos no tiene sentido dkjfakdjsfkads</div>
+</div>
+  
+
+<script>
+  //var name= alert("AYER DE TEJE 7 A CERO");
+  
+  var nombre =prompt("PORFAVOR INGRESA TU NOMBRE");
+  function toggle(btn) {
+    const desc = btn.nextElementSibling;
+    desc.style.display = desc.style.display === "block" ? "none" : "block";
+    
+  }
+  function xd(){
+    
+  var name1=document.getElementById("descripcion");
+    var des ="Ahora ya termine yo " + nombre + " es hora de galar la tripa hasta moriiiir";
+    name1.textContent=des;
+  }
+  function hola(){
+    
+    
+    
+  var hello = document.getElementById("enpantalla");
+    var esto = "Bienvenido "+ nombre +" A"; 
+    hello.textContent = esto;
+    if(nombre ==null){
+    alert("INGRESA TU NOMBRE MRD");
+    }
+  }
+  hola();
+</script>
+
+</body>
+</html>
